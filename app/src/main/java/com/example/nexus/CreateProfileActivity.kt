@@ -75,8 +75,9 @@ class CreateProfileActivity : AppCompatActivity() {
             Toast.makeText(this, "Profile created successfully", Toast.LENGTH_SHORT).show()
 
             // Proceed to main/home activity
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, HomeActivity::class.java))
             finish()
+
         }
     }
 }

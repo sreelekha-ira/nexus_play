@@ -1,0 +1,24 @@
+<!-- tournament_item.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/card_bg">
+
+    <ImageView
+        android:id="@+id/tournamentImage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tournament_placeholder"/>
+
+    <TextView
+        android:id="@+id/tournamentTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tournament"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:paddingTop="6dp"/>
+</LinearLayout>

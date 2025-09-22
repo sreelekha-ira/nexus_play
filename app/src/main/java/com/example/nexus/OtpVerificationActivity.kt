@@ -14,12 +14,14 @@ class OtpVerificationActivity : AppCompatActivity() {
 
         val btnVerifyOtp = findViewById<Button>(R.id.btnVerifyOtp)
         btnVerifyOtp.setOnClickListener {
-            // Here, add your OTP verification logic
+            // TODO: Implement OTP verification with backend/Firebase here
+            // e.g., verify the OTP entered by the user
 
+            // If verification succeeds, proceed:
             val nextIntent = when (userFlow) {
                 "signup" -> Intent(this, CreateProfileActivity::class.java)
                 "login" -> Intent(this, HomeActivity::class.java)
-                else -> Intent(this, MainActivity::class.java)
+                else -> Intent(this, HomeActivity::class.java)
             }
             startActivity(nextIntent)
             finish()
